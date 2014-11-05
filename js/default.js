@@ -60,7 +60,7 @@ function Init(){
     
     if(foregroudPlaneHeight > 3)
       flag = - 1;
-    if(foregroudPlaneHeight < -2)
+    if(foregroudPlaneHeight < -3)
        flag = 1;
    
       foregroudPlaneHeight = foregroudPlaneHeight + 0.1*flag;
