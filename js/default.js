@@ -21,6 +21,7 @@ function setForegroundPlane(filename) {
 }
 
 function Init(){
+        //set up secne
         scene = new THREE.Scene();
   
        //setup camera
