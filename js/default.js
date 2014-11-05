@@ -59,9 +59,9 @@ function Init(){
  	requestAnimationFrame( animate );
   
     
-    if(foregroudPlaneHeight > 15)
+    if(foregroudPlaneHeight > 3)
       flag = - 1;
-    if(foregroudPlaneHeight < -5)
+    if(foregroudPlaneHeight < -3)
        flag = 1;
       foregroudPlaneHeight = foregroudPlaneHeight + 0.1*flag;
     LEIA_foregroundPlane.position.set(0, 0, foregroudPlaneHeight);
