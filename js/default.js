@@ -13,8 +13,7 @@ function setForegroundPlane(filename) {
 	LEIA_foregroundPlaneTexture.repeat.set( 1, 1 );
 	var LEIA_foregroundPlaneMaterial = new THREE.MeshLambertMaterial( { map: LEIA_foregroundPlaneTexture, transparent:true, side: THREE.DoubleSide } );
 	var LEIA_foregroundPlaneGeometry;
-	//LEIA_foregroundPlaneGeometry = new THREE.PlaneGeometry(40, 40, 50, 50);
-	//var l = 57.64;
+
 	var l = 38.56;
 	LEIA_foregroundPlaneGeometry = new THREE.PlaneGeometry(l, l, 50, 50);
 	LEIA_foregroundPlane = new THREE.Mesh(LEIA_foregroundPlaneGeometry, LEIA_foregroundPlaneMaterial);
@@ -62,6 +61,7 @@ function Init(){
       flag = - 1;
     if(foregroudPlaneHeight < -2)
        flag = 1;
+   
       foregroudPlaneHeight = foregroudPlaneHeight + 0.1*flag;
     LEIA_foregroundPlane.position.set(0, 0, foregroudPlaneHeight);
     renderer.setClearColor(new THREE.Color().setRGB(1.0, 1.0, 1.0)); 
