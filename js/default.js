@@ -66,7 +66,7 @@ function Init(){
       foregroudPlaneHeight = foregroudPlaneHeight + 0.1*flag;
     LEIA_foregroundPlane.position.set(0, 0, foregroudPlaneHeight);
     renderer.setClearColor(new THREE.Color().setRGB(1.0, 1.0, 1.0)); 
-	renderer.Leia_render(scene, camera,undefined,undefined,_holoScreenScale,_camFov,_messageFlag);
+	renderer.Leia_render(scene, camera,undefined,undefined,_holoScreenSize,_camFov,_messageFlag);
  }
 
  
